@@ -1,0 +1,156 @@
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+ :root {
+     --main-bg: hsl(217, 54%, 11%);
+     --card-bg: hsl(216, 50%, 16%);
+     --line-color: hsl(215, 32%, 27%);
+     --white: hsl(0, 0%, 100%);
+     --primary: hsl(215, 51%, 70%);
+     --cyan: hsl(178, 100%, 50%);
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ h2 {
+     color: var(--white);
+     margin-bottom: 1rem;
+     cursor: pointer;
+ }
+
+ h2:hover {
+     color: var(--cyan);
+ }
+
+ p {
+     font-size: 18px;
+     color: var(--primary);
+     line-height: 30px;
+ }
+
+ b {
+     color: var(--white);
+     cursor: pointer;
+ }
+
+ b:hover {
+     color: var(--cyan);
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ body {
+     min-height: 100vh;
+     font-family: 'Outfit', sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--main-bg);
+ }
+
+
+
+ .card {
+     background-color: var(--card-bg);
+     border-radius: 1rem;
+     width: 350px;
+     box-shadow: 0 0 8px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .card .container {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     padding: 1.5rem;
+ }
+
+ .header {
+     position: relative;
+     cursor: pointer;
+ }
+
+ .main-img {
+     border-radius: 1rem;
+     position: relative;
+ }
+
+ .overlay {
+     background-color: var(--cyan);
+     opacity: 40%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 3px;
+     right: 0;
+     border-radius: 1rem;
+     display: none;
+ }
+
+ .view {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: none;
+ }
+
+ .header:hover .overlay,
+ .header:hover .view {
+     display: block;
+ }
+
+ .icons {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .icons div {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     margin-top: 10px;
+ }
+
+ .eth {
+     color: var(--cyan);
+ }
+
+ .time {
+     color: var(--white);
+ }
+
+ .separator {
+     width: 100%;
+     border: 1px solid var(--line-color);
+     border-radius: 100%;
+ }
+
+ .footer {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .footer img {
+     width: 40px;
+     border: 1px solid var(--white);
+     border-radius: 50%;
+ }
+
+ /* footer */
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+     color: var(--white);
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }

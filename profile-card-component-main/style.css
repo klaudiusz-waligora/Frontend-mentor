@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+
+/*
+font-family: 'Kumbh Sans',
+sans-serif;
+*/
+
+:root {
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+
+    --darkGray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+b,
+p {
+    color: var(--darkGray);
+    font-weight: 400;
+}
+
+h2,
+.stats {
+    font-weight: 700;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--darkCyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top -450px left -500px, top 450px left 500px;
+}
+
+div.container {
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+
+
+.profile-picture img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.content {
+    text-align: center;
+    padding: 3.5rem 3.5rem 2rem 3.5rem;
+
+}
+
+div.line {
+    margin: 0 auto;
+    height: 2px;
+    width: 80%;
+    border: .1px solid hsla(0, 0%, 59%, 0.25);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    text-align: center;
+}
+
+.stats p {
+    letter-spacing: 2px;
+    font-size: .7rem;
+}

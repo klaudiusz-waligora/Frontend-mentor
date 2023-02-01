@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --neutralPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paleBlue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 400;
+    color: var(--desaturatedBlue);
+}
+
+a {
+    text-decoration: underline;
+    color: var(--brightBlue);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card {
+    width: 350px;
+    background-color: var(--neutralPaleBlue);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-bottom: 1.5rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.plan-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    text-align: center;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 10px;
+}
+
+.change-button:hover {
+    color: hsl(245, 75%, 52%, 0.5);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 10px 25px 15px 25px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.proceed {
+    background-color: var(--brightBlue);
+    color: var(--neutralPaleBlue);
+    margin-top: 2rem;
+    margin-bottom: 0;
+
+}
+
+.proceed:hover {
+    background-color: hsl(245, 75%, 52%, 0.5);
+}
+
+.cancel {
+    background-color: var(--neutralPaleBlue);
+    color: var(--desaturatedBlue);
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
