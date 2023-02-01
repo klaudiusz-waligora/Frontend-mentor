@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--veryLightGray);
+}
+
+header {
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 200;
+}
+
+header h1.strong {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--veryDarkBlue)
+}
+
+header p {
+    color: var(--grayishBlue);
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    padding: 25px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1),
+        0 15px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+
+.item-1::after {
+    background-color: var(--cyan);
+}
+
+.item-2::after {
+    background-color: var(--red)
+}
+
+.item-3::after {
+    background-color: var(--orange)
+}
+
+.item-4::after {
+    background-color: var(--blue)
+}
+
+.item h3 {
+    color: var(--veryDarkBlue);
+    margin-bottom: 10px;
+}
+
+.item p {
+    color: var(--grayishBlue);
+    font-size: 14px;
+}
+
+.item img {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-top: 45px;
+}
+
+
+
+@media screen and (min-width: 1110px) {
+
+    .item-1 {
+        transform: translateY(100px);
+    }
+
+    .item-4 {
+        transform: translateY(100px);
+    }
+}
+
+@media (min-width: 330px) and (max-width:750px) {
+    header {
+        max-width: 330px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+}
